@@ -1,0 +1,21 @@
+<form [formGroup]="formGroup">
+	<div class="grid justify-content-center mt-8">
+		<div class="col-2">
+			<div class="p-card p-3 p-fluid">
+				<div class="field">
+					<label htmlFor="nombre">Nombre</label>
+					<input pInputText id="nombre" type="text" formControlName="nombre" />
+				</div>
+				<div class="field">
+					<label htmlFor="edad">Edad</label>
+					<input pInputText id="edad" type="text" formControlName="edad" />
+				</div>
+				<div class="field">
+					<label htmlFor="herramienta">Herramienta</label>
+					<input pInputText id="herramienta" type="text" formControlName="herramienta" />
+				</div>
+				<p-button label="Pet" (click)="showDialog()"></p-button>
+			</div>
+		</div>
+	</div>
+</form>
